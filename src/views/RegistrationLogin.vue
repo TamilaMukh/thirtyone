@@ -1,12 +1,12 @@
 <template>
   <div class="bg-slate-100 py-52">
     <div class="container mx-auto">
-      <div class="flex items-center justify-center">
-        <div class="w-1/2">
-          <img class="w-1/2 float-right" src="https://www.instagram.com/static/images/homepage/phones/home-phones-2x.png/cbc7174b4f05.png" alt="">
+      <div class="block lg:flex px-2 lg:px-0 items-center justify-center">
+        <div class="w-full flex justify-center lg:w-1/2">
+          <img class="w-1/2 float-none lg:float-right" src="https://www.instagram.com/static/images/homepage/phones/home-phones-2x.png/cbc7174b4f05.png" alt="">
         </div>
-        <div class="w-1/2">
-          <div class="w-10/12 bg-white p-10 rounded-xl">
+        <div class="w-full lg:w-1/2">
+          <div class="w-full lg:w-10/12 bg-white p-10 rounded-xl">
             <h1 class="text-center text-5xl font-bold mb-5">SingleRoma</h1>
             <div v-if="regLog === 1">
               <input v-model="login.email" class="border rounded-lg p-2 w-full my-3" placeholder="Электронная почта" type="text">
