@@ -137,5 +137,15 @@ export default {
       await axios.get("https://6286235096bccbf32d6fe5bf.mockapi.io/messages")
     ).data;
   },
+ metaInfo() {
+    return {
+      title: this.chat.personTwo,
+      titleTemplate: '%s',
+      htmlAttrs: {
+        lang: 'en',
+        amp: true
+      }
+    }
+  }
 };
 </script>

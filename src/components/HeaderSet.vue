@@ -2,7 +2,9 @@
   <div class="py-5 bg-white px-3 lg:px-0">
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
-        <h1 class="text-center text-xl font-bold lg:text-5xl">SingleRoma</h1>
+        <router-link to="/">
+            <h1 class="text-center text-xl font-bold lg:text-5xl">SingleRoma</h1>
+          </router-link>
         <div class="hidden lg:flex">
           <input
             class="border p-2 rounded-lg"

@@ -30,6 +30,7 @@ export default {
   data() {
     return {
       users: null,
+      title: "SingleRoma - messages",
       posts: null,
       currentUser: localStorage.getItem("loggedUser"),
       showModal: 0,
@@ -139,5 +140,15 @@ export default {
       await axios.get("https://6286235096bccbf32d6fe5bf.mockapi.io/posts")
     ).data;
   },
+   metaInfo() {
+    return {
+      title: this.title,
+      titleTemplate: '%s',
+      htmlAttrs: {
+        lang: 'en',
+        amp: true
+      }
+    }
+  }
 };
 </script>
